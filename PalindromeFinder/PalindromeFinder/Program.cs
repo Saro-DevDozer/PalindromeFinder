@@ -11,13 +11,20 @@ namespace PalindromeFinder
         {
             try
             {
+                string input = string.Empty;
+
+                do
+                {
+                    Console.WriteLine("Please enter a valid number");
+                    input = Console.ReadLine();
+                } while (string.IsNullOrEmpty(input));
+
                 bool palindromeFoundFlag = false;
 
-                int Input = 2147483647;
+                int number = Convert.ToInt32(input);
 
-                double totalLength = Math.Floor(Math.Log10(Input) + 1);
-                //List<int> possibleNumbers = new List<int>();
-                char[] inputArray = Input.ToString().ToCharArray();
+                double totalLength = Math.Floor(Math.Log10(number) + 1);
+                char[] inputArray = number.ToString().ToCharArray();
 
                 //selecting number of digits in incremental order
                 //using for loop, since it's faster than foreach
@@ -37,7 +44,7 @@ namespace PalindromeFinder
                         if (!string.IsNullOrEmpty(builder.ToString()))
                         {
                             long num, rem, sum = 0, temp;
-                            num =Convert.ToInt32(builder.ToString());
+                            num = Convert.ToInt32(builder.ToString());
                             temp = num;
                             while (num > 0)
                             {
@@ -48,33 +55,13 @@ namespace PalindromeFinder
                             if (temp == sum)
                             {
                                 palindromeFoundFlag = true;
-                                Console.WriteLine(sum);
+                                //Console.WriteLine(sum);
                             }
                         }
-                            //possibleNumbers.Add(Convert.ToInt32(builder.ToString()));
                     }
                 }
 
-                //possibleNumbers.ForEach(x => { Console.WriteLine(x); });
-
-
-                //for (int i = 0; i < possibleNumbers.Count(); i++)
-                //{
-                //    long num, rem, sum = 0, temp;
-                //    num = possibleNumbers[i];
-                //    temp = num;
-                //    while (num > 0)
-                //    {
-                //        rem = num % 10;
-                //        num = num / 10;
-                //        sum = sum * 10 + rem;
-                //    }
-                //    if (temp == sum)
-                //    {
-                //        palindromeFoundFlag = true;
-                //        Console.WriteLine(sum);
-                //    }
-                //}
+                Console.WriteLine("Palindrome Found:" + palindromeFoundFlag.ToString());
             }
             catch (Exception ex)
             {
