@@ -13,6 +13,7 @@ namespace PalindromeFinder
             {
                 string input = string.Empty;
                 int number = 0;
+                List<int> palindromeList = new List<int>();
 
                 do
                 {
@@ -44,7 +45,7 @@ namespace PalindromeFinder
                         //check if the current number is palindrome
                         if (!string.IsNullOrEmpty(builder.ToString()))
                         {
-                            long num, rem, sum = 0, temp;
+                            int num, rem, sum = 0, temp;
                             num = Convert.ToInt32(builder.ToString());
                             temp = num;
                             while (num > 0)
@@ -56,12 +57,17 @@ namespace PalindromeFinder
                             if (temp == sum)
                             {
                                 palindromeFoundFlag = true;
+                                palindromeList.Add(sum);
                             }
                         }
                     }
                 }
 
-                Console.WriteLine("Palindrome Found:" + palindromeFoundFlag.ToString());
+                Console.WriteLine("Palindrome Found: " + palindromeFoundFlag.ToString());
+                
+                if (palindromeFoundFlag)
+                    Console.WriteLine("List of Palindromes: " + string.Join(',', palindromeList));
+
             }
             catch (Exception ex)
             {

@@ -1,0 +1,11 @@
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\bin\Debug\netcoreapp3.1\PalindromeFinder.exe
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\bin\Debug\netcoreapp3.1\PalindromeFinder.deps.json
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\bin\Debug\netcoreapp3.1\PalindromeFinder.runtimeconfig.json
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\bin\Debug\netcoreapp3.1\PalindromeFinder.runtimeconfig.dev.json
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\bin\Debug\netcoreapp3.1\PalindromeFinder.dll
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\bin\Debug\netcoreapp3.1\PalindromeFinder.pdb
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\obj\Debug\netcoreapp3.1\PalindromeFinder.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\obj\Debug\netcoreapp3.1\PalindromeFinder.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\obj\Debug\netcoreapp3.1\PalindromeFinder.AssemblyInfo.cs
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\obj\Debug\netcoreapp3.1\PalindromeFinder.dll
+C:\Users\HP\Desktop\Events User POC UI\Events User POC\PalindromeFinder\PalindromeFinder\PalindromeFinder\obj\Debug\netcoreapp3.1\PalindromeFinder.pdb
