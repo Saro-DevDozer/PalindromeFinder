@@ -12,22 +12,22 @@ namespace PalindromeFinder
             try
             {
                 string input = string.Empty;
+                int number = 0;
 
                 do
                 {
                     Console.WriteLine("Please enter a valid number");
                     input = Console.ReadLine();
-                } while (string.IsNullOrEmpty(input));
+
+                } while (string.IsNullOrEmpty(input) || !Int32.TryParse(input, out number));
 
                 bool palindromeFoundFlag = false;
-
-                int number = Convert.ToInt32(input);
 
                 double totalLength = Math.Floor(Math.Log10(number) + 1);
                 char[] inputArray = number.ToString().ToCharArray();
 
-                //selecting number of digits in incremental order
                 //using for loop, since it's faster than foreach
+                //to get all possible set of numbers from given number
                 for (int i = 2; i <= totalLength; i++)
                 {
                     for (int j = 0; j < totalLength; j++)
@@ -41,6 +41,7 @@ namespace PalindromeFinder
                                 builder.Clear();
                         }
 
+                        //check if the current number is palindrome
                         if (!string.IsNullOrEmpty(builder.ToString()))
                         {
                             long num, rem, sum = 0, temp;
@@ -55,7 +56,6 @@ namespace PalindromeFinder
                             if (temp == sum)
                             {
                                 palindromeFoundFlag = true;
-                                //Console.WriteLine(sum);
                             }
                         }
                     }
