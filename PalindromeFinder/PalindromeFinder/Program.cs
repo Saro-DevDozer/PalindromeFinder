@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace PalindromeFinder
@@ -36,7 +37,27 @@ namespace PalindromeFinder
                     }
                 }
 
-                possibleNumbers.ForEach(x => { Console.WriteLine(x); });
+                //possibleNumbers.ForEach(x => { Console.WriteLine(x); });
+
+                bool palindromeFoundFlag = false;
+
+                for (int i = 0; i < possibleNumbers.Count(); i++)
+                {
+                    long num, rem, sum = 0, temp;
+                    num = possibleNumbers[i];
+                    temp = num;
+                    while (num > 0)
+                    {
+                        rem = num % 10;
+                        num = num / 10;
+                        sum = sum * 10 + rem;
+                    }
+                    if (temp == sum)
+                    {
+                        palindromeFoundFlag = true;
+                        Console.WriteLine(sum);
+                    }
+                }
             }
             catch (Exception ex)
             {
