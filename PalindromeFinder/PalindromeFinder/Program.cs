@@ -10,7 +10,7 @@ namespace PalindromeFinder
         {
             try
             {
-                int Input = 12234325;
+                int Input = 2147483647;
 
                 double totalLength = Math.Floor(Math.Log10(Input) + 1);
                 List<int> possibleNumbers = new List<int>();
@@ -27,9 +27,12 @@ namespace PalindromeFinder
                         {
                             if (x < totalLength)
                                 builder.Append(inputArray[x]);
+                            else
+                                builder.Clear();
                         }
 
-                        possibleNumbers.Add(Convert.ToInt32(builder.ToString()));
+                        if (!string.IsNullOrEmpty(builder.ToString()))
+                            possibleNumbers.Add(Convert.ToInt32(builder.ToString()));
                     }
                 }
 
